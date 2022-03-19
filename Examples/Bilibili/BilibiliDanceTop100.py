@@ -1,5 +1,13 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
 """
-BilibiliDanceTop100
+@FileName: BilibiliDanceTop100.py
+@Time    : 2022/3/19 17:23
+@Author  : 热气球
+@Software: PyCharm
+@Version : 1.0
+@Contact : 17695691664@163.com
+@Des     : 
 """
 import re
 from urllib import request
@@ -14,7 +22,7 @@ class BilibiliDanceTop100:
         self.i = 0
 
     def get_html(self):
-        "获取HTML内容"
+        """ 获取HTML内容 """
         req = request.Request(url=self.url, headers=self.headers)
         res = request.urlopen(req)
         html = res.read().decode()
@@ -23,7 +31,7 @@ class BilibiliDanceTop100:
         self.parse_html(html)
 
     def parse_html(self, html):
-        "提取HTML内容"
+        """ 提取HTML内容 """
         regex = '<div class="content">.*?class="title">(.*?)</a>.*?alt="up">(.*?)</span></a>.*?alt="play">(.*?)</span>.*?alt="like">(.*?)</span>'
         pattern = re.compile(regex, re.S)
         r_list = pattern.findall(html)
@@ -31,7 +39,7 @@ class BilibiliDanceTop100:
         self.save_html(r_list)
 
     def save_html(self, r_list):
-        "数据处理函数"
+        """数据处理函数 """
         item = {}
         for r in r_list:
             item['视频名称'] = "《{}》".format(r[0].strip())
@@ -42,7 +50,7 @@ class BilibiliDanceTop100:
             self.i += 1
 
     def run(self):
-        "程序运行调配"
+        """ 程序运行调配 """
         self.get_html()
 
 
