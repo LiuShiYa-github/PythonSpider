@@ -28,7 +28,7 @@
        res = requests.get(url=self.test_url, proxies=proxies, headers=self.headers, timeout=2)
 ```
 
-示例
+**示例**
 ```python
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
@@ -108,26 +108,27 @@ if __name__ == '__main__':
 
 ### requests.post()方法
 
-**适用场景**
 
+
+```text
+适用场景:
 post类型请求的网站
 
-**参数说明**
-
+参数说明:
 参数名为data,类型为字典
-
 res = requests.post(url=url,data=data,headers=headers)
 
-**post请求特点**
-
+post请求特点:
 以Form表单进行提交数据
+```
+
 
 
 **使用浏览器分析数据**
 
 ![img.png](../Image/使用浏览器分析数据.png)
 
-
+```text
 ①F12 点击network
 
 ②选择ALL 查看所有的网络数据包
@@ -136,21 +137,18 @@ res = requests.post(url=url,data=data,headers=headers)
 
 ④选择要查看的信息
 
-**解释:**
-
+解释:
 ALL:所有的网络数据包
-
 XHR:异步加载的网络数据包
-
 JS:加载的JS文件信息
-
 ...
-
 Headers:请求头信息
-
 Preview:预览信息
-
 Response:响应的内容
+```
+
+
+
 
 **post方式请求有道翻译并获取翻译内容**
 
@@ -163,17 +161,16 @@ Response:响应的内容
 **难点: 破解反爬的验证,涉及到js加密**
 ![img_4.png](../Image/img_4.png)
 
+```text
 salt: 16476853549203
-
 sign: d3b8cfa182556ac326e8475567b58d7c
-
 lts: 1647685354920
-
 bv: 75adedb929794295187b046da37b1fc1
 
 经过翻译多个单词找到规律
-
 bv不变 salt\sign\lts会变化
+
+```
 
 下一步就是找到加密的规则,猜测是js加密,那么就观察js进行验证
 
@@ -203,7 +200,7 @@ bv不变 salt\sign\lts会变化
 ![img_3.png](../Image/img_3.png)
 
 
-代码[PostYoudaoTranslate.py]
+**代码[PostYoudaoTranslate.py]**
 
 **效果展示**
 
