@@ -12,10 +12,11 @@
 猫眼电影经典影片 按照热门排序
 """
 
-from urllib import request
 import random
-import time
 import re
+import time
+from urllib import request
+
 import pymongo
 
 

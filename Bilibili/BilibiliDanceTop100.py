@@ -1,16 +1,15 @@
 """
-BilibiliDocumentaryTop100
-https://www.bilibili.com/v/popular/rank/documentary
+BilibiliDanceTop100
 """
-from urllib import request
 import re
+from urllib import request
 
 
-class BilibiliDocumentaryTop100:
+class BilibiliDanceTop100:
     def __init__(self):
-        self.url = 'https://www.bilibili.com/v/popular/rank/documentary'
+        self.url = 'https://www.bilibili.com/v/popular/rank/dance'
         self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36'}
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'}
         # 添加计数变量
         self.i = 0
 
@@ -25,7 +24,7 @@ class BilibiliDocumentaryTop100:
 
     def parse_html(self, html):
         "提取HTML内容"
-        regex = '<div class="info"><a.*?class="title">(.*?)</a>.*?class="data-box">(.*?)</span>.*?alt="play">(.*?)</span>.*?alt="follow">(.*?)</span></div></div></div>'
+        regex = '<div class="content">.*?class="title">(.*?)</a>.*?alt="up">(.*?)</span></a>.*?alt="play">(.*?)</span>.*?alt="like">(.*?)</span>'
         pattern = re.compile(regex, re.S)
         r_list = pattern.findall(html)
         # 调用数据处理函数
@@ -35,10 +34,10 @@ class BilibiliDocumentaryTop100:
         "数据处理函数"
         item = {}
         for r in r_list:
-            item['名称'] = "《{}》".format(r[0].strip())
-            item['集数'] = r[1].strip()
+            item['视频名称'] = "《{}》".format(r[0].strip())
+            item['up'] = r[1].strip()
             item['播放量'] = r[2].strip()
-            item['点赞量'] = r[3].strip()
+            item['弹幕'] = r[3].strip()
             print(item)
             self.i += 1
 
@@ -48,6 +47,6 @@ class BilibiliDocumentaryTop100:
 
 
 if __name__ == '__main__':
-    spider = BilibiliDocumentaryTop100()
+    spider = BilibiliDanceTop100()
     spider.run()
-    print('电视剧数量：', spider.i)
+    print('作品数量：', spider.i)

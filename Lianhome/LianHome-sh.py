@@ -2,17 +2,18 @@
 链家二手房源信息的抓取
 目标数据： 房源名称、地址、户型、面积、方位、是否精装、楼层、年代、类型、总价、单价
 """
-import requests
-from lxml import etree
 import random
 import time
+
+import requests
 from fake_useragent import UserAgent
+from lxml import etree
 
 
 class LianHomeSpider:
     def __init__(self):
         self.url = 'https://sh.lianjia.com/ershoufang/pg{}/'
-
+    
     def get_html(self, url):
         headers = {'User-Agent': UserAgent().random}
         for i in range(3):

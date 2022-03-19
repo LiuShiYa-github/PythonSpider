@@ -2,11 +2,11 @@
 BilibiliDanceTop100
 https://www.bilibili.com/v/popular/rank/tv
 """
-import random
 import re
+import time
+
 import requests
 from lxml import etree
-import time
 
 
 class BilibiliDanceTop100:

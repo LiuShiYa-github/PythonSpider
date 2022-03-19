@@ -12,18 +12,20 @@
 抓取指定贴吧的指定页的数据，保存到本地
 """
 
-from  urllib import request,parse
 import random
 import time
+from urllib import request, parse
+
+
 class BaiduTiebaSpider:
     def __init__(self):
         "定义常用的变量"
         self.url = 'https://tieba.baidu.com/f?kw={}&ie=utf-8&pn={}'
         self.headers = {
-            'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36'
-           }
-
-    def get_html(self,url):
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36'
+        }
+    
+    def get_html(self, url):
         "获取相应内容的函数"
         req = request.Request(url=url,headers=self.headers)
         res = request.urlopen(req)

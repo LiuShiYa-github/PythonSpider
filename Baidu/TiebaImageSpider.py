@@ -2,20 +2,21 @@
 抓取指定贴吧的所有贴子中的图片
 """
 
+import random
+import time
+from urllib import parse
+
 import requests
 from lxml import etree
-import time
-import random
-from urllib import parse
 
 
 class TiebaImageSpider:
-
+    
     def __init__(self):
         self.url = 'https://tieba.baidu.com/f?kw={}&pn={}'
         # 此处适用IE的User-Agent
         self.headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko'}
-
+    
     def get_html(self, url):
         """功能函数1 - 请求"""
         html = requests.get(url=url, headers=self.headers).text

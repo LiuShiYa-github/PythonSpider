@@ -16,10 +16,11 @@
 第三页：https://www.che168.com/china/a0_0msdgscncgpi1ltocsp3exx0/?pvareaid=102179#currengpostion
 """
 
-from urllib import request
+import random
 import re
 import time
-import random
+from urllib import request
+
 import pymongo
 
 

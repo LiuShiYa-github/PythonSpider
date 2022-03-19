@@ -1,14 +1,14 @@
 """
-BilibiliTvTop100
-https://www.bilibili.com/v/popular/rank/tv
+BilibiliDocumentaryTop100
+https://www.bilibili.com/v/popular/rank/documentary
 """
-from urllib import request
 import re
+from urllib import request
 
 
-class BilibiliTvTop100:
+class BilibiliDocumentaryTop100:
     def __init__(self):
-        self.url = 'https://www.bilibili.com/v/popular/rank/tv'
+        self.url = 'https://www.bilibili.com/v/popular/rank/documentary'
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36'}
         # 添加计数变量
@@ -48,6 +48,6 @@ class BilibiliTvTop100:
 
 
 if __name__ == '__main__':
-    spider = BilibiliTvTop100()
+    spider = BilibiliDocumentaryTop100()
     spider.run()
     print('电视剧数量：', spider.i)
