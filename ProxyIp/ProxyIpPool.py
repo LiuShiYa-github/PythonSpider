@@ -10,8 +10,9 @@
 @Des     : 抓取飞度代理的免费高匿代理并测试可用性
 """
 
-import requests
 import re
+
+import requests
 from fake_useragent import UserAgent
 
 
