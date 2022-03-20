@@ -12,6 +12,10 @@ Python爬虫笔记
 03 多线程爬虫
 04 多级页面多线程爬取
 05 Cookie模拟登录
-06 Selenium + PhantomJS|Chrome|Firefox
+```
+```text
+chromedriver下载地址:
+https://chromedriver.storage.googleapis.com/index.html
+
 ```
 
