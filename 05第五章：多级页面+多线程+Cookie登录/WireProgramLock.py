@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-@FileName: WireProgramLock.py
+@FileName: WireProgramLockDemo.py
 @Time    : 2022/3/20 18:10
 @Author  : 热气球
 @Software: PyCharm

@@ -15,3 +15,25 @@
 ![img_1.png](../Image/img_14.png)
 
 
+多线程抓取华为应用商店对比
+![img_15.png](img_15.png)
+![img_16.png](img_16.png)
+
+
+
+多线程抓取腾讯招聘职位信息的对比
+![img_17.png](img_17.png)
+![img_18.png](img_18.png)
+
+
+
+
+
+
+
+
+
+
+
+
+

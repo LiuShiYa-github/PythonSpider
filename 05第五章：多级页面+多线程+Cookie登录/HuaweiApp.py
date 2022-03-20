@@ -43,7 +43,6 @@ class HuaweiApp:
 					app_info['downloadRecommendUri'].split('|')[1])
 				self.num += 1
 				print(item)
-			exit(1)
 	
 	def run(self):
 		for page in range(1, 17):
