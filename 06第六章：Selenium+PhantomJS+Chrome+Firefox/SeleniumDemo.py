@@ -11,10 +11,6 @@
 """
 from selenium import webdriver
 
-# 火狐浏览器
-driver = webdriver.Firefox()
-driver.get('https://www.baidu.com')
-
 # 谷歌浏览器
-driver = webdriver.Firefox()
+driver = webdriver.Chrome()
 driver.get('https://www.baidu.com')
