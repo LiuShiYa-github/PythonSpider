@@ -10,7 +10,6 @@
 @Des     : 使用selenium抓取猫眼电影top100
 """
 from selenium import webdriver
-from fake_useragent import UserAgent
 import time
 
 driver = webdriver.Chrome()
