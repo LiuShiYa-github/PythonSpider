@@ -34,12 +34,15 @@ class JdSpider:
 		# 2 提取具体的数据
 		li_list = self.driver.find_elements_by_xpath('//*[@id="J_goodsList"]/ul/li')
 		for li in li_list:
-			item = {}
-			item['price'] = li.find_element_by_xpath('.//div[@class="p-price"]/strong').text.strip()
-			item['name'] = li.find_element_by_xpath('.//div[@class="p-name"]/a/em').text.strip()
-			item['commit'] = li.find_element_by_xpath('.//div[@class="p-commit"]/strong').text.strip()
-			item['shop'] = li.find_element_by_xpath('.//div[@class="p-shopnum"]/a').text.strip()
-			print(item)
+			try:
+				item = {}
+				item['price'] = li.find_element_by_xpath('.//div[@class="p-price"]/strong').text.strip()
+				item['name'] = li.find_element_by_xpath('.//div[@class="p-name"]/a/em').text.strip()
+				item['commit'] = li.find_element_by_xpath('.//div[@class="p-commit"]/strong').text.strip()
+				item['shop'] = li.find_element_by_xpath('.//div[@class="p-shopnum"]/a').text.strip()
+				print(item)
+			except Exception as e:
+				print(e)
 	
 	def run(self):
 		while True:
