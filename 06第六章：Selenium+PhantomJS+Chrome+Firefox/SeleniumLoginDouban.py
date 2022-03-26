@@ -21,7 +21,7 @@ driver.switch_to.frame(iframe_node)
 # 2、找到密码登录并点击
 driver.find_element_by_xpath('/html/body/div[1]/div[1]/ul[1]/li[2]').click()
 # 3、用户名、密码、登录豆瓣
-driver.find_element_by_id('username').send_keys('17695691664')
-driver.find_element_by_id('password').send_keys('liushiya111')
+driver.find_element_by_id('username').send_keys('xxx')
+driver.find_element_by_id('password').send_keys('xxx')
 driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[1]/div[5]/a').click()
 driver.quit()

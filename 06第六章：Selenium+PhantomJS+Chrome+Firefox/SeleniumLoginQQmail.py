@@ -19,9 +19,9 @@ driver.maximize_window()
 # 1 切换iframe子页面
 driver.switch_to.frame('login_frame')
 # 2 用户名密码登录
-driver.find_element_by_id('u').send_keys('745992600')
+driver.find_element_by_id('u').send_keys('xxx')
 time.sleep(2)
-driver.find_element_by_id('p').send_keys('liushiya123')
+driver.find_element_by_id('p').send_keys('xxx')
 time.sleep(2)
 driver.find_element_by_id('login_button').click()
 # driver.quit()
