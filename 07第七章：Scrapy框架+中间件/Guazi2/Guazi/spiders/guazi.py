@@ -17,7 +17,7 @@ class GuaziSpider(scrapy.Spider):
     
     def start_requests(self):
         """ 一次性生成所有的URL地址,一次性交给调度器入队列 """
-        for page in range(1, 80):
+        for page in range(1, 5):
             url = 'https://mapi.guazi.com/car-source/carList/pcList?minor=&sourceType=&ec_buy_car_list_ab=&location_city=&district_id=&tag=-1&license_date=&auto_type=&driving_type=&gearbox=&road_haul=&air_displacement=&emission=&car_color=&guobie=&bright_spot_config=&seat=&fuel_type=&order=&priceRange=0,-1&tag_types=&diff_city=&intention_options=&initialPriceRange=&monthlyPriceRange=&transfer_num=&car_year=&carid_qigangshu=&carid_jinqixingshi=&cheliangjibie=&page={}&pageSize=20&city_filter=12&city=12&guazi_city=12&qpres=520467436215214080&versionId=0.0.0.0&osv=Unknown&platfromSource=wap'.format(page)
             yield scrapy.Request(url=url, callback=self.datail_page)
             
@@ -38,15 +38,15 @@ class GuaziSpider(scrapy.Spider):
                 break
         
             # 生成下一页的地址,去交给调度器入队列
-        # if self.page < 5:
-        #     self.page += 1
-        #     url = 'https://mapi.guazi.com/car-source/carList/pcList?minor=&sourceType=&ec_buy_car_list_ab=&location_city' \
-        #           '=&district_id=&tag=-1&license_date=&auto_type=&driving_type=&gearbox=&road_haul=&air_displacement' \
-        #           '=&emission=&car_color=&guobie=&bright_spot_config=&seat=&fuel_type=&order=&priceRange=0,' \
-        #           '-1&tag_types=&diff_city=&intention_options=&initialPriceRange=&monthlyPriceRange=&transfer_num' \
-        #           '=&car_year=&carid_qigangshu=&carid_jinqixingshi=&cheliangjibie=&page={}&pageSize=20&city_filter=12&city=12&guazi_city=12&qpres=520467436215214080&versionId=0.0.0.0&osv' \
-        #           '=Unknown&platfromSource=wap'.format(self.page)
-        #     yield scrapy.Request(url=url, callback=self.parse)
+        if self.page < 80:
+            self.page += 1
+            url = 'https://mapi.guazi.com/car-source/carList/pcList?minor=&sourceType=&ec_buy_car_list_ab=&location_city' \
+                  '=&district_id=&tag=-1&license_date=&auto_type=&driving_type=&gearbox=&road_haul=&air_displacement' \
+                  '=&emission=&car_color=&guobie=&bright_spot_config=&seat=&fuel_type=&order=&priceRange=0,' \
+                  '-1&tag_types=&diff_city=&intention_options=&initialPriceRange=&monthlyPriceRange=&transfer_num' \
+                  '=&car_year=&carid_qigangshu=&carid_jinqixingshi=&cheliangjibie=&page={}&pageSize=20&city_filter=12&city=12&guazi_city=12&qpres=520467436215214080&versionId=0.0.0.0&osv' \
+                  '=Unknown&platfromSource=wap'.format(self.page)
+            yield scrapy.Request(url=url, callback=self.datail_page)
         
         
         

@@ -63,11 +63,36 @@ DEFAULT_REQUEST_HEADERS = {
 #    'scrapy.extensions.telnet.TelnetConsole': None,
 #}
 
+# 定以MySQL相关变量
+MYSQL_HOST = '10.0.0.101'
+MYSQL_USER = 'root'
+MYSQL_PWD = '123456'
+MYSQL_DB = 'guazidb'
+CHARSET = 'utf8'
+
+# 定义Mongo相关变量
+MONGO_HOST = '10.0.0.101'
+MONGO_PORT = 27017
+MONGO_DB  = 'guazidb'
+MONGO_SET = 'guaziset'
+
+# 设置数据导出的编码
+FEED_EXPORT_ENCODING = 'gb18030'
+# FEED_EXPORT_ENCODING = 'utf8'
+
+# 设置scrapy的日志级别
+# LOG_LEVEL = 'WARNING'
+LOG_LEVEL = 'DEBUG'
+LOG_FILE = 'guazi.log'
+
+
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 # 开启管道 300是优先级，（1-1000）不等 数字越小 优先级越高
 ITEM_PIPELINES = {
-   'Guazi.pipelines.GuaziPipeline': 300,
+   'Guazi.pipelines.GuaziPipeline': 100,
+   'Guazi.pipelines.GuaziMysqlPipeline': 200,
+   'Guazi.pipelines.GuaziMongoPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
