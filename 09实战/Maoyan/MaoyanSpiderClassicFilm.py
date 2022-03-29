@@ -33,12 +33,15 @@ class MaoyanSpider_Classic_Film:
 	
 	def get_html(self, url):
 		"获取HTML内容"
-		req = request.Request(url=url, headers=self.headers)
-		res = request.urlopen(req)
-		html = res.read().decode()
-		# print(html)
-		# 直接调用解析函数
-		self.parse_html(html)
+		try:
+			req = request.Request(url=url, headers=self.headers)
+			res = request.urlopen(req)
+			html = res.read().decode("utf-8", 'ignore')
+			# print(html)
+			# 直接调用解析函数
+			self.parse_html(html)
+		except UnicodeEncodeError as e:
+			print(e)
 	
 	def parse_html(self, html):
 		"提取HTML内容"
