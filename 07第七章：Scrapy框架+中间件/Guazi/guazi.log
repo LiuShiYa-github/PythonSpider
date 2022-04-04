@@ -6303,3 +6303,41 @@
  'scheduler/enqueued/memory': 78,
  'start_time': datetime.datetime(2022, 3, 27, 4, 45, 16, 591262)}
 2022-03-27 12:45:52 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-04-03 12:40:23 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: Guazi)
+2022-04-03 12:40:23 [scrapy.utils.log] INFO: Versions: lxml 4.8.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.2.0, Python 3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Windows-10-10.0.19042-SP0
+2022-04-03 12:40:23 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'Guazi',
+ 'COOKIES_ENABLED': False,
+ 'FEED_EXPORT_ENCODING': 'gb18030',
+ 'LOG_FILE': 'guazi.log',
+ 'NEWSPIDER_MODULE': 'Guazi.spiders',
+ 'SPIDER_MODULES': ['Guazi.spiders']}
+2022-04-03 12:40:23 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-04-03 12:40:23 [scrapy.extensions.telnet] INFO: Telnet Password: 21614d5efbf56622
+2022-04-03 12:40:23 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2022-04-03 12:40:24 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-04-03 12:40:24 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-04-03 12:40:24 [scrapy.middleware] INFO: Enabled item pipelines:
+['Guazi.pipelines.GuaziPipeline',
+ 'Guazi.pipelines.GuaziMysqlPipeline',
+ 'Guazi.pipelines.GuaziMongoPipeline']
+2022-04-03 12:40:24 [scrapy.core.engine] INFO: Spider opened
