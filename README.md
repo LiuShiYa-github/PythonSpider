@@ -1,7 +1,7 @@
 # PythonSpider
 
 [![Python Version](https://img.shields.io/badge/python-3.8+-green)](https://www.python.org)
-<a href="https://github.com/LiuShiYa-github/PythonSpider/blob/master/Image/wx.jpg" target="_blank"><img src="https://img.shields.io/badge/weChat-微信群-blue.svg" alt="微信群"></a>
+<a href="https://github.com/LiuShiYa-github/PythonSpider/blob/master/Image/wx.jpg" target="_blank"><img src="https://img.shields.io/badge/weChat-微信-blue.svg" alt="微信"></a>
 <a href="https://blog.csdn.net/weixin_42506599?spm=1000.2115.3001.5343" target="_blank"><img src="https://img.shields.io/badge/csdn-CSDN-red.svg" alt="CSDN"></a>
 [![CI status](https://github.com/smicallef/spiderfoot/workflows/Tests/badge.svg)](https://github.com/LiuShiYa-github/PythonSpider/actions)
 ![img.png](Image/readme.png)
