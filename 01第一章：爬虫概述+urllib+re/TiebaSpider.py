@@ -1,20 +1,17 @@
-#!/usr/bin/env python3.8.8
-# -*- encoding: utf-8 -*-
-'''
-@File    :   BaiduTiebaSpider.py
-@Time    :   2022/02/07 16:49:51
-@Author  :   热气球
-@Version :   1.0
-@Contact :   17695691664@163.com
-'''
-
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
 """
-抓取指定贴吧的指定页的数据，保存到本地
+@FileName: TiebaSpider.py
+@Time    : 2022/4/10 22:26
+@Author  : 热气球
+@Software: PyCharm
+@Version : 1.0
+@Contact : 2573514647@qq.com
+@Des     : 抓取指定贴吧的指定页的数据，保存到本地
 """
-
+from urllib import request, parse
 import random
 import time
-from urllib import request, parse
 
 
 class BaiduTiebaSpider:
@@ -24,10 +21,10 @@ class BaiduTiebaSpider:
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36'
         }
-    
+
     def get_html(self, url):
         "获取相应内容的函数"
-        req = request.Request(url=url,headers=self.headers)
+        req = request.Request(url=url, headers=self.headers)
         res = request.urlopen(req)
         html = res.read().decode('utf-8')
 
@@ -37,9 +34,9 @@ class BaiduTiebaSpider:
         "解析提取数据的函数"
         pass
 
-    def save_html(self,filename,html):
+    def save_html(self, filename, html):
         "数据处理函数"
-        with open(filename,'w',encoding='utf-8') as f:
+        with open(filename, 'w', encoding='utf-8') as f:
             f.write(html)
 
     def run(self):
@@ -48,17 +45,17 @@ class BaiduTiebaSpider:
         start = int(input("请输入起始页："))
         end = int(input("请输入终止页："))
         params = parse.quote(name)
-        for page in  range(start,end+1):
-            pn = (page-1)*50
-            url = self.url.format(params,pn)
+        for page in range(start, end + 1):
+            pn = (page - 1) * 50
+            url = self.url.format(params, pn)
             # 发请求、解析、保存
             html = self.get_html(url)
-            filename = '{}_第{}页.html'.format(name,page)
-            self.save_html(filename,html)
+            filename = '{}_第{}页.html'.format(name, page)
+            self.save_html(filename, html)
             # 终端提示打印
             print('第%d页抓取成功' % page)
-            #控制抓取的频率
-            time.sleep(random.randint(1,3))
+            # 控制抓取的频率
+            time.sleep(random.randint(1, 3))
 
 
 if __name__ == '__main__':
