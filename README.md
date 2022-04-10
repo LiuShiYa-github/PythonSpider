@@ -85,8 +85,29 @@
 <details>
 <summary>👉查看实例</summary>
 
-* [文件下载小助手](https://github.com/Jack-Cherish/python-spider/blob/master/downloader.py "悬停显示")
-* [爬虫小工具](#爬虫小工具)
-* [文件下载小助手](https://github.com/Jack-Cherish/python-spider/blob/master/downloader.py "悬停显示")
+* [抓取贴吧HTML](https://github.com/LiuShiYa-github/PythonSpider/blob/master/01%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E7%88%AC%E8%99%AB%E6%A6%82%E8%BF%B0%2Burllib%2Bre/TiebaSpider.py "悬停显示")
+* [猫眼电影经典影片](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/MaoyanClassicFile.py)
+* [汽车之家基于Redis实现增量爬虫](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/CarHomeSpiderIncrementalRedis.py "悬停显示")
+* [汽车之家Mysql实现增量爬虫](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/CarHomeSpiderMysqlIncre.py "悬停显示")
+* [链家二手房](https://github.com/LiuShiYa-github/PythonSpider/blob/master/03%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9Alxml%2Bxpath/LianHomeSpider.py"悬停显示")
+* [有道翻译结果抓取](https://github.com/LiuShiYa-github/PythonSpider/blob/master/04%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9Arequests%E7%9A%84%E9%AB%98%E7%BA%A7%E4%BD%BF%E7%94%A8/PostYoudaoTranslate.py "悬停显示")
+* [抓取飞度代理的免费高匿代理并测试可用性](https://github.com/LiuShiYa-github/PythonSpider/blob/master/04%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9Arequests%E7%9A%84%E9%AB%98%E7%BA%A7%E4%BD%BF%E7%94%A8/ProxyIpPool.py "悬停显示")
+* [汽车之家数据抓取-两级页面](https://github.com/LiuShiYa-github/PythonSpider/blob/master/05%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E5%A4%9A%E7%BA%A7%E9%A1%B5%E9%9D%A2%2B%E5%A4%9A%E7%BA%BF%E7%A8%8B%2BCookie%E7%99%BB%E5%BD%95/CarHomeSpider.py "悬停显示")
+* [豆瓣剧情电影排行榜](https://github.com/LiuShiYa-github/PythonSpider/blob/master/05%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E5%A4%9A%E7%BA%A7%E9%A1%B5%E9%9D%A2%2B%E5%A4%9A%E7%BA%BF%E7%A8%8B%2BCookie%E7%99%BB%E5%BD%95/DoubanPlotSpider.py "悬停显示")
+* [豆瓣全站的电影](https://github.com/LiuShiYa-github/PythonSpider/blob/master/05%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E5%A4%9A%E7%BA%A7%E9%A1%B5%E9%9D%A2%2B%E5%A4%9A%E7%BA%BF%E7%A8%8B%2BCookie%E7%99%BB%E5%BD%95/DoubanPlotStorageJsonSpider.py "悬停显示")
+* [华为应用市场社交类app](https://github.com/LiuShiYa-github/PythonSpider/blob/master/05%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E5%A4%9A%E7%BA%A7%E9%A1%B5%E9%9D%A2%2B%E5%A4%9A%E7%BA%BF%E7%A8%8B%2BCookie%E7%99%BB%E5%BD%95/HuaweiAppMultithreading.py "悬停显示")
+* [多线程抓取腾讯招聘](https://github.com/LiuShiYa-github/PythonSpider/blob/master/05%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E5%A4%9A%E7%BA%A7%E9%A1%B5%E9%9D%A2%2B%E5%A4%9A%E7%BA%BF%E7%A8%8B%2BCookie%E7%99%BB%E5%BD%95/MultilevelPageMultithreading.py "悬停显示")
+* [selenium无头浏览器方式获取京东商城爬虫类的图书](https://github.com/LiuShiYa-github/PythonSpider/blob/master/06%E7%AC%AC%E5%85%AD%E7%AB%A0%EF%BC%9ASelenium%2BPhantomJS%2BChrome%2BFirefox/JdSeleniumOptionsSpider.py "悬停显示")
+* [使用selenium模拟登录QQ邮箱](https://github.com/LiuShiYa-github/PythonSpider/blob/master/06%E7%AC%AC%E5%85%AD%E7%AB%A0%EF%BC%9ASelenium%2BPhantomJS%2BChrome%2BFirefox/SeleniumLoginQQmail.py "悬停显示")
+* [抓取网易云音乐排行榜](https://github.com/LiuShiYa-github/PythonSpider/blob/master/06%E7%AC%AC%E5%85%AD%E7%AB%A0%EF%BC%9ASelenium%2BPhantomJS%2BChrome%2BFirefox/SeleniumWangyiyunMusic.py "悬停显示")
+* [使用selenium抓取最新行政区化代码](https://github.com/LiuShiYa-github/PythonSpider/blob/master/06%E7%AC%AC%E5%85%AD%E7%AB%A0%EF%BC%9ASelenium%2BPhantomJS%2BChrome%2BFirefox/SeleniumLoginQQmail.py "悬停显示")
+* [Scrapy抓取二手车之家](https://github.com/LiuShiYa-github/PythonSpider/tree/master/07%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9AScrapy%E6%A1%86%E6%9E%B6%2B%E4%B8%AD%E9%97%B4%E4%BB%B6/Che168-middlewares "悬停显示")
+* [盗墓笔记全系列](https://github.com/LiuShiYa-github/PythonSpider/tree/master/07%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9AScrapy%E6%A1%86%E6%9E%B6%2B%E4%B8%AD%E9%97%B4%E4%BB%B6/Daomu "悬停显示")
+* [瓜子二手车](https://github.com/LiuShiYa-github/PythonSpider/tree/master/07%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9AScrapy%E6%A1%86%E6%9E%B6%2B%E4%B8%AD%E9%97%B4%E4%BB%B6/Guazi "悬停显示")
+* [肯德基门店](https://github.com/LiuShiYa-github/PythonSpider/tree/master/07%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9AScrapy%E6%A1%86%E6%9E%B6%2B%E4%B8%AD%E9%97%B4%E4%BB%B6/KFC "悬停显示")
+* [Scrapy三层以上页面抓取PPT模板](https://github.com/LiuShiYa-github/PythonSpider/tree/master/07%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9AScrapy%E6%A1%86%E6%9E%B6%2B%E4%B8%AD%E9%97%B4%E4%BB%B6/PPT "悬停显示")
+* [360浏览器美眉图片抓取](https://github.com/LiuShiYa-github/PythonSpider/tree/master/07%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9AScrapy%E6%A1%86%E6%9E%B6%2B%E4%B8%AD%E9%97%B4%E4%BB%B6/SO "悬停显示")
+* [豆瓣滑块验证码](https://github.com/LiuShiYa-github/PythonSpider/blob/master/08%E7%AC%AC%E5%85%AB%E7%AB%A0%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%2B%E6%BB%91%E5%9D%97%2B%E7%A7%BB%E5%8A%A8%E7%AB%AF/DoubanLimitSlider.py "悬停显示")
+* [pytesseract识别图片](https://github.com/LiuShiYa-github/PythonSpider/blob/master/08%E7%AC%AC%E5%85%AB%E7%AB%A0%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%2B%E6%BB%91%E5%9D%97%2B%E7%A7%BB%E5%8A%A8%E7%AB%AF/Pytesseract.py "悬停显示")
 
 </details>
