@@ -10,7 +10,7 @@
 * 此repo是纪录学习Python爬虫阶段的代码与笔记，学习视频来源于网络
 * 代码、教程**仅限于学习交流，请勿用于任何商业用途！**
 
-
+## 知识点
 <details>
 <summary>👉查看涉及的知识点</summary>
 
@@ -82,7 +82,11 @@
 
 ## 实例
 
+<details>
+<summary>👉查看实例</summary>
+
+* [文件下载小助手](https://github.com/Jack-Cherish/python-spider/blob/master/downloader.py "悬停显示")
 * [爬虫小工具](#爬虫小工具)
-    * [文件下载小助手](https://github.com/Jack-Cherish/python-spider/blob/master/downloader.py "悬停显示")
-    * [爬虫小工具](#爬虫小工具)
-    * [文件下载小助手](https://github.com/Jack-Cherish/python-spider/blob/master/downloader.py "悬停显示")
+* [文件下载小助手](https://github.com/Jack-Cherish/python-spider/blob/master/downloader.py "悬停显示")
+
+</details>
