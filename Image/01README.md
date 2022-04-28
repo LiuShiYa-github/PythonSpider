@@ -44,7 +44,7 @@ c/c++：虽然执行效率高，但是代码成型慢
 
 [robots协议](https://www.baidu.com/robots.txt)：网站通过robots协议告诉搜索引擎那些页面可以抓取，哪些页面不可以抓取，通用网络爬虫需要遵守robots协议。
 
-![img_21.png](../Image/img_21.png)
+![img_21.png](img_21.png)
 
 2、聚焦网络爬虫：自己写的爬虫程序
 
@@ -127,7 +127,7 @@ print(code)
 
 [测试发送请求时的headers到底是什么](http://httpbin.org/get)
 
-![img_22.png](../Image/img_22.png)
+![img_22.png](img_22.png)
 
 **Demo**
 ```python
@@ -149,7 +149,7 @@ html = res.read().decode()
 print(html)
 ```
 
-![img_23.png](../Image/img_23.png)
+![img_23.png](img_23.png)
 
 **urllib.request.Request()方法**
 ```text
@@ -191,7 +191,7 @@ res = request.urlopen(req)
 html = res.read().decode()
 print(html)
 ```
-![img_24.png](../Image/img_24.png)
+![img_24.png](img_24.png)
 
 **小结**
 ```text
@@ -203,8 +203,67 @@ print(html)
 ```
 # urllib.parse编码模块
 
+**urllib.parse**
+```text
+作用: 给URL地址中的查询参数进行编码
 
+导入方式:
+    -- import urllib.parse
+    -- from urllib import parse
+
+urlencode()方法
+    -- 给URL地址中查询参数进行编码,参数类型为字典
+```
+
+**示例**
+
+```text
+URL地址中多个查询参数
+    -- 编码前: params = {'wd': '美女', 'pn': '50'}
+    -- 编码中: params = urllib.parse.urlencode(params)
+    -- 编码后: params结果: 'wd=%E7%BE%8E%E5%A5%B3&pn=50'
+```
+发现编码后待会自动对多个查询参数间添加&符号
+
+![img_26.png](img_26.png)
+
+
+**拼接URL地址的三种方式**
+```text
+-- 字符串相加
+    url = 'https://www.baidu.com/s?' + 编码后的查询参数
+-- 字符串格式化
+    url = 'https://www.baidu.com/s?%s' %编码后的查询参数
+-- 字符串的format()方法
+    url = 'https://www.baidu.com/s?{}'.format(编码后的查询参数)
+```
+
+**urllib.parse.quote**
+```text
+urllib.parse.quote('参数为字符串')编码
+作用:
+    -- 对URL地址中的中文进行编码,类似于urlencode()方法
+示例:
+word = '美女'
+result = urllib.parse.quote(word)
+result结果: '%E7%BE%8E%E5%A5%B3'
+```
+
+**urllib.parse解码**
+```text
+unquote()方法
+作用
+    -- 将编码后的字符串转换为普通的Unicode字符串
+    
+示例:
+    from urllib import parse
+    params = '%E7%BE%8E%E5%A5%B3'
+    result = parse.unquote(params)
+    result结果: 美女
+```
 
 # 正则表达式模块使用
+
+
 
 
