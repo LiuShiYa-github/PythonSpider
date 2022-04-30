@@ -57,24 +57,23 @@ with open('../02第二章：数据持久化+requests/test.csv', 'w', newline='')
 [代码-一次性写入多行](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/MaoyanClassicMovieCSVWriterows.py)
 ![img_29.png](../Image/img_29.png)
 
+
+# 数据持久化存储-MySQL
+
+**猫眼经典电影-存储在MySQL**
+
+[代码](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/MaoyanClassicMovieMysql.py)
+
+![img_33.png](../Image/img_33.png)
+
+# 数据持久化存储-MongoDB
+
 **猫眼经典电影-存储在MongoDB**
 
 [代码](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/MaoyanClassicMovieMongoDB.py)
 
 ![img_31.png](../Image/img_31.png)
 ![img_32.png](../Image/img_32.png)
-
-**猫眼经典电影-存储在MySQL**
-
-[代码](https://www.cnblogs.com/ityouknow/p/11684770.html)
-
-![img_29.png](../Image/img_29.png)
-
-
-
-# 数据持久化存储-MySQL
-
-# 数据持久化存储-MongoDB
 
 # 多级页面抓取
 

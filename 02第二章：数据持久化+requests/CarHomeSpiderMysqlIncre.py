@@ -24,7 +24,7 @@ class CarHomeSpiderIncrementalMySQL:
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
         }
-        # 技术变量
+        # 计数变量
         self.i = 0
         # 数据库相关变量
         self.db = pymysql.connect(host='10.0.0.101', user='root', password='123456', database='cardb', charset='utf8')
@@ -124,7 +124,7 @@ class CarHomeSpiderIncrementalMySQL:
         for i in range(1, 5):
             url = self.url.format(i)
             self.parse_html(url)
-        # 断开数据路
+        # 断开数据库连接
         self.cursor.close()
         self.db.close()
 
