@@ -50,22 +50,24 @@ with open('../02第二章：数据持久化+requests/test.csv', 'w', newline='')
 
 **猫眼经典电影-保存为CSV**
 
-[代码-单行写入](https://www.cnblogs.com/ityouknow/p/11684770.html)
+[代码-单行写入](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/MaoyanClassicMovieCSVWriterow.py)
 ![img_30.png](../Image/img_30.png)
 
 
-[代码-一次性写入多行](https://www.cnblogs.com/ityouknow/p/11684770.html)
+[代码-一次性写入多行](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/MaoyanClassicMovieCSVWriterows.py)
 ![img_29.png](../Image/img_29.png)
 
 **猫眼经典电影-存储在MongoDB**
 
-[代码](https://www.cnblogs.com/ityouknow/p/11684770.html)
+[代码](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/MaoyanClassicMovieMongoDB.py)
 
 ![img_31.png](../Image/img_31.png)
 ![img_32.png](../Image/img_32.png)
 
 **猫眼经典电影-存储在MySQL**
+
 [代码](https://www.cnblogs.com/ityouknow/p/11684770.html)
+
 ![img_29.png](../Image/img_29.png)
 
 
