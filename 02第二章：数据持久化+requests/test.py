@@ -8,6 +8,14 @@
 @Version : 1.0
 @Contact : 2573514647@qq.com
 @Des     : 猫眼电影经典影片 按照热门排序
+
+create table maoyantab(
+name varchar(100),
+score varchar(50),
+type varchar(50),
+star varchar(50),
+time varchar(50)
+)charset=utf8;
 """
 
 from urllib import request

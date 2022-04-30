@@ -64,7 +64,7 @@ with open('../02第二章：数据持久化+requests/test.csv', 'w', newline='')
 
 [代码](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/MaoyanClassicMovieMysql.py)
 
-![img_33.png](../Image/img_33.png)
+![img_34.png](../Image/img_34.png)
 
 # 数据持久化存储-MongoDB
 
