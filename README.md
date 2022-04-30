@@ -86,10 +86,13 @@
 <summary>👉查看实例</summary>
 
 * [抓取贴吧HTML](https://github.com/LiuShiYa-github/PythonSpider/blob/master/01%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E7%88%AC%E8%99%AB%E6%A6%82%E8%BF%B0%2Burllib%2Bre/TiebaSpider.py "悬停显示")
-* [猫眼电影经典影片](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/MaoyanClassicFile.py)
+* [猫眼经典电影-保存为CSV-单行保存](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/MaoyanClassicMovieCSVWriterow.py "悬停显示")
+* [猫眼经典电影-保存为CSV-多行保存](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/MaoyanClassicMovieCSVWriterows.py "悬停显示")
+* [猫眼电影经典影片-存储到MySQL](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/MaoyanClassicMovieMysql.py "悬停显示")
+* [猫眼电影经典影片-存储到MongoDB](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/MaoyanClassicMovieMongoDB.py "悬停显示")
 * [汽车之家基于Redis实现增量爬虫](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/CarHomeSpiderIncrementalRedis.py "悬停显示")
 * [汽车之家Mysql实现增量爬虫](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/CarHomeSpiderMysqlIncre.py "悬停显示")
-* [链家二手房](https://github.com/LiuShiYa-github/PythonSpider/blob/master/03%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9Alxml%2Bxpath/LianHomeSpider.py"悬停显示")
+* [链家二手房](https://github.com/LiuShiYa-github/PythonSpider/blob/master/03%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9Alxml%2Bxpath/LianHomeSpider.py "悬停显示")
 * [有道翻译结果抓取](https://github.com/LiuShiYa-github/PythonSpider/blob/master/04%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9Arequests%E7%9A%84%E9%AB%98%E7%BA%A7%E4%BD%BF%E7%94%A8/PostYoudaoTranslate.py "悬停显示")
 * [抓取飞度代理的免费高匿代理并测试可用性](https://github.com/LiuShiYa-github/PythonSpider/blob/master/04%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9Arequests%E7%9A%84%E9%AB%98%E7%BA%A7%E4%BD%BF%E7%94%A8/ProxyIpPool.py "悬停显示")
 * [汽车之家数据抓取-两级页面](https://github.com/LiuShiYa-github/PythonSpider/blob/master/05%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E5%A4%9A%E7%BA%A7%E9%A1%B5%E9%9D%A2%2B%E5%A4%9A%E7%BA%BF%E7%A8%8B%2BCookie%E7%99%BB%E5%BD%95/CarHomeSpider.py "悬停显示")
