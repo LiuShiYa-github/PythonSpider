@@ -44,7 +44,7 @@ c/c++：虽然执行效率高，但是代码成型慢
 
 [robots协议](https://www.baidu.com/robots.txt)：网站通过robots协议告诉搜索引擎那些页面可以抓取，哪些页面不可以抓取，通用网络爬虫需要遵守robots协议。
 
-![img_21.png](img_21.png)
+![img_21.png](../Image/img_21.png)
 
 2、聚焦网络爬虫：自己写的爬虫程序
 
@@ -127,7 +127,7 @@ print(code)
 
 [测试发送请求时的headers到底是什么](http://httpbin.org/get)
 
-![img_22.png](img_22.png)
+![img_22.png](../Image/img_22.png)
 
 **Demo**
 ```python
@@ -149,7 +149,7 @@ html = res.read().decode()
 print(html)
 ```
 
-![img_23.png](img_23.png)
+![img_23.png](../Image/img_23.png)
 
 **urllib.request.Request()方法**
 ```text
@@ -191,7 +191,7 @@ res = request.urlopen(req)
 html = res.read().decode()
 print(html)
 ```
-![img_24.png](img_24.png)
+![img_24.png](../Image/img_24.png)
 
 **小结**
 ```text
@@ -225,7 +225,7 @@ URL地址中多个查询参数
 ```
 发现编码后待会自动对多个查询参数间添加&符号
 
-![img_26.png](img_26.png)
+![img_26.png](../Image/img_26.png)
 
 
 **拼接URL地址的三种方式**
@@ -262,8 +262,96 @@ unquote()方法
     result结果: 美女
 ```
 
-# 正则表达式模块使用
+**百度贴吧示例**
 
+[代码](https://github.com/LiuShiYa-github/PythonSpider/blob/master/01%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E7%88%AC%E8%99%AB%E6%A6%82%E8%BF%B0%2Burllib%2Bre/TiebaSpider.py)
 
+**实现步骤**
+```text
+1. 查看所抓取数据在响应内容是否存在
+    右键 - 查看网页源代码 - 搜索所数据关键字
+2. 查看并分析URL地址规律
+    第一页: http://tieba.baidu.com/f?kw=???&pn=0
+    第二页: http://tieba.baidu.com/f?kw=???&pn=1
+    第三页: http://tieba.baidu.com/f?kw=???&pn=2
+3. 发送请求获取响应内容
+4. 保存到本地文件
+```
 
+# 正则表达式re模块使用
 
+**re模块使用流程**
+```text
+使用方法一:
+r_list = re.findall('正则表达式', html, re.S)
+
+使用方法二:
+pattern = re.complie('正则表达式', re.S)
+r_list = pattrern.findall(html)
+
+注意①: 使用findall()方法得到的结果一定为列表
+注意②: re.S作为使用正则表达式元字符,可匹配\n在内的所有字符串
+```
+
+**正则表达式常用元字符**
+
+```text
+. - 任意一个字符(不包含\n)
+\d - 一个数字
+\s - 空白字符
+\S - 非空白字符
+[] - 包含[]内容
+* - 出现0次或多次
++ - 出现1次或多次
+```
+
+**贪婪匹配和非贪婪匹配**
+
+```text
+贪婪匹配:
+    1. 在整个表达式匹配成功的前提下,尽可能多的匹配: * + ?
+    2. 表达方式: .* .+ .?
+
+非贪婪匹配:
+    1. 在整个表达式匹配成功的前提下,尽可能少的匹配 * + ?
+    2. 表达方式: .*? .+? .??
+```
+
+**Demo**
+
+```python
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+"""
+@FileName: test.py
+@Time    : 2022/4/30 15:07
+@Author  : 热气球
+@Software: PyCharm
+@Version : 1.0
+@Contact : 2573514647@qq.com
+@Des     :  贪婪匹配和非贪婪匹配
+"""
+
+import re
+
+html = """
+<div><p>如果你为门中弟子伤她一分,我便屠你满门!</p></div>
+<div><p>如果你为天下人损伤她一毫,我便杀尽天下人!</p></div>
+"""
+# 贪婪匹配
+# pattern = re.compile('<div><p>.*</p></div>', re.S)
+# r_list = pattern.findall(html)
+# print(r_list)
+# 非贪婪匹配
+pattern = re.compile('<div><p>.*?</p></div>', re.S)
+r_list = pattern.findall(html)
+print(r_list)
+```
+
+![img_25.png](../Image/img_25.png)
+
+![img_27.png](../Image/img_27.png)
+
+**综合示例**
+
+[猫眼电影](https://github.com/LiuShiYa-github/PythonSpider/blob/master/01%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E7%88%AC%E8%99%AB%E6%A6%82%E8%BF%B0%2Burllib%2Bre/MaoyanSpider.py)

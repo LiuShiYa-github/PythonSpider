@@ -27,7 +27,7 @@ class MaoyanSpider:
         self.i = 0
 
     def get_html(self, url):
-        "获取HTML内容"
+        """获取HTML内容"""
         req = request.Request(url=url, headers=self.headers)
         res = request.urlopen(req)
         html = res.read().decode()
@@ -36,7 +36,7 @@ class MaoyanSpider:
         self.parse_html(html)
 
     def parse_html(self, html):
-        "提取HTML内容"
+        """提取HTML内容"""
         regex = '<div class="movie-item-info">.*?title="(.*?)".*?">.*?</a></p>.*?class="star">(.*?)</p>.*?class="releasetime">(.*?)</p>'
         pattern = re.compile(regex, re.S)
         r_list = pattern.findall(html)
@@ -44,7 +44,7 @@ class MaoyanSpider:
         self.save_html(r_list)
 
     def save_html(self, r_list):
-        "数据处理函数"
+        """数据处理函数"""
         item = {}
         for r in r_list:
             item['name'] = r[0].strip()
@@ -54,7 +54,7 @@ class MaoyanSpider:
             self.i += 1
 
     def run(self):
-        "程序运行调配"
+        """程序运行调配"""
         for page in range(0, 91, 10):
             url = self.url.format(page)
             # print(url)
