@@ -63,7 +63,16 @@ xpath 选取节点:
 ```
 
 **基于xpath抓取链家二手房**
-
+```text
+实现步骤:
+    确认所抓取数据在响应内容中是否存在 -  存在
+    分析URL地址规律
+    写xpath表达式
+    编写程序框架,完善程序
+注意:
+    在写xpath表达式时一切以响应内容为主
+    页面中HTML为最终渲染完成之后的,和响应内容中的HTML不一定相同
+```
 [基于xpath抓取链家二手房](https://github.com/LiuShiYa-github/PythonSpider/blob/master/03%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9Alxml%2Bxpath/LianHomeSpider.py "悬停显示")
 
 ![img_42.png](../Image/img_42.png)
