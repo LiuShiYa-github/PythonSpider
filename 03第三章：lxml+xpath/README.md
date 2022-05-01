@@ -21,6 +21,25 @@
 
 # xpath语法解析
 
+```text
+定义:
+    xpath即为XML路径语言,它是一种用来确定XML文档中某部分位置的语言,同样适用于HTML文档的检索
+
+xpath 选取节点:
+    只要涉及到条件,加[]://li[@class="xxx"] //li[2]
+    只要获取属性值,加@://li[@class="xxx"] //li/@href
+// : 从所有节点中查找(包括子节点和后代节点)
+@ : 获取属性值
+
+使用场景1(属性值作为条件): //div[@class="movie-item-info"]
+使用场景2(直接获取属性值): //div[@class="movie-item-info"]/a/img/@src
+
+使用xpath表达式匹配结果为两种情况:字符串和节点对象
+    [1] xpath表达式的末尾为: /text() /@href 得到的列表中为"字符串"
+    [2] 其他剩余所有情况得到的列表中均为"节点对象"
+```
+
+
 **xpath抓取QQ音乐热歌榜**
 
 [代码](https://github.com/LiuShiYa-github/PythonSpider/blob/master/03%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9Alxml%2Bxpath/xpathdemo.py)
@@ -30,6 +49,9 @@
 
 # lxml+xpath解析抓取数据
 
+```text
+
+```
 
 **基于xpath抓取链家二手房**
 
