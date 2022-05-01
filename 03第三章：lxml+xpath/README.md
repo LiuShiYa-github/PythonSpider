@@ -49,8 +49,17 @@ xpath 选取节点:
 
 # lxml+xpath解析抓取数据
 
+**lxml解析库**
 ```text
-
+安装:
+    Ubuntu安装: sudo pip3 install lxml
+    Windows安装: python -m pip install lxml
+使用流程:
+    导入模块: from lxml import etree
+    创建解析对象: parse_html = etree.HTML(html)
+    解析对象调用xpath: r_list = parse_html.xpath('xpath表达式')
+注意:
+    只要调用了xpath,则得到的数据类型一定为列表
 ```
 
 **基于xpath抓取链家二手房**
