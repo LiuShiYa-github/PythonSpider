@@ -221,6 +221,12 @@ myset.insert_many({'name': '泰坦尼克号', 'star': 'T', 'time': '1990-01-01'}
     windows: python -m pip install requests
 常用方法:
     res = requests.get(url=url, headers=headers)
+响应对象属性:
+    res.text:获取响应对象内容 - 字符串
+    res.content:获取响应对象内容 - bytes
+    res.status_code:获取http响应码
+    res.url:返回实际数据的URL地址
+
 ```
 
 [requests官网](https://pypi.org/project/requests/)
