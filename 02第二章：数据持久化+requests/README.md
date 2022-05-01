@@ -212,10 +212,14 @@ myset.insert_many({'name': '泰坦尼克号', 'star': 'T', 'time': '1990-01-01'}
 
 # requets模块
 
+```text
+
+```
 
 # 增量爬虫-MySQL以及Redis实现
 
-**增量爬虫**
+**增量爬虫-MySQL**
+
 ```text
 定义:
     每次爬取只抓取新更新的链接,之前抓取过的链接不会再继续抓取
@@ -236,8 +240,6 @@ myset.insert_many({'name': '泰坦尼克号', 'star': 'T', 'time': '1990-01-01'}
     s.update(url.encode())
     finger = s.hexdigest()
 ```
-
-**增量爬虫-MySQL**
 
 **建库建表语句**
 ```sql
@@ -275,6 +277,17 @@ flush privileges;
 ![img_37.png](../Image/img_37.png)
 
 **增量爬虫-Redis**
+
+**原理**
+```text
+原理:
+    redis基于内存,效率极高
+    利用redis中集合的特性,自动去重,可以轻松管理所有请求的指纹
+实现思路:
+    利用集合的sadd()方法向集合中添加指纹,根据返回值来判断集合中是否存在该指纹
+    添加成功返回1,表示此请求之前并未抓取过
+    添加失败返回0,表示此请求之前已经抓取过
+```
 
 [代码](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/CarHomeSpiderIncrementalRedis.py)
 
