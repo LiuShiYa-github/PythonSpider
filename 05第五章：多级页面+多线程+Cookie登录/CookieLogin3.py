@@ -6,7 +6,7 @@
 @Author  : 热气球
 @Software: PyCharm
 @Version : 1.0
-@Contact : 17695691664@163.com
+@Contact : 2573514647@qq.com
 @Des     : Cookie模拟登陆三
 """
 import requests
@@ -17,7 +17,7 @@ s = requests.session()
 def log():
     # post_url:F12抓包抓到的，验证登录的地址
     post_url = 'https://www.zhenai.com/api/login/userLogin.do'
-    get_url = 'https://home.cnblogs.com/set/profile/'
+    # get_url = 'https://home.cnblogs.com/set/profile/'
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36'
     }

@@ -289,9 +289,7 @@ class PostYoudaoTranslate:
 if __name__ == '__main__':
 	spider = PostYoudaoTranslate()
 	spider.run()
-
 ```
-
 
 **效果展示**
 

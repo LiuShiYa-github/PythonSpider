@@ -60,17 +60,20 @@ class CarHomeSpider:
         two_regex = '<div class="car-box">.*?<h3 class="car-brand-name">(.*?)</h3>.*?<h4>(.*?)</h4>.*?<h4>(.*?)</h4>.*?<h4>(.*?)</h4>.*?<h4>(.*?)</h4>.*?<span class="price" id="overlayPrice">(.*?)<b>万</b><i class="usedfont used-xiajiantou"></i>.*?'
         car_lsit = self.re_func(two_regex, two_html)
         item = {}
-        item['name'] = car_lsit[0][0].strip()
-        item['km'] = car_lsit[0][1].strip()
-        item['time'] = car_lsit[0][2].strip()
-        item['type'] = car_lsit[0][3].split('/')[0].strip()
-        item['city'] = car_lsit[0][4].strip()
-        item['price'] = car_lsit[0][5].split(';')[1].strip()
-        print(item)
+        try:
+            item['name'] = car_lsit[0][0].strip()
+            item['km'] = car_lsit[0][1].strip()
+            item['time'] = car_lsit[0][2].strip()
+            item['type'] = car_lsit[0][3].split('/')[0].strip()
+            item['city'] = car_lsit[0][4].strip()
+            item['price'] = car_lsit[0][5].split(';')[1].strip()
+            print(item)
+        except Exception:
+            pass
 
     def run(self):
         """程序的入口函数"""
-        for i in range(1, 5):
+        for i in range(1, 3):
             url = self.url.format(i)
             self.parse_html(url)
 
