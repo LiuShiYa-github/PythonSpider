@@ -217,7 +217,7 @@ myset.insert_many({'name': '泰坦尼克号', 'star': 'T', 'time': '1990-01-01'}
 
 **增量爬虫**
 ```text
-定以:
+定义:
     每次爬取只抓取新更新的链接,之前抓取过的链接不会再继续抓取
 
 实现思路:
@@ -229,9 +229,44 @@ myset.insert_many({'name': '泰坦尼克号', 'star': 'T', 'time': '1990-01-01'}
     
     所以,一旦检测到有链接已经爬取过,则无需再检测其之后的链接,终止程序即可.
 
+如何给url地址进行MD5加密生成指纹？
+    from hashlib import md5
+
+    s=md5()
+    s.update(url.encode())
+    finger = s.hexdigest()
 ```
 
 **增量爬虫-MySQL**
+
+**建库建表语句**
+```sql
+#创建库以及指纹表
+create database cardb charset utf8;
+use cardb;
+create table request_finger(
+finger char(32)
+)charset=utf8;
+
+#创建存储所抓取数据的表
+create table cartab(
+name varchar(100),
+km varchar(50),
+time varchar(50),
+type varchar(50),
+city varchar(50),
+price varchar(50)
+)charset=utf8;
+```
+
+**MySQL数据库授权远程连接**
+
+```sql
+use mysql；
+select  User,authentication_string,Host from user;
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' ;
+flush privileges; 
+```
 
 [代码](https://github.com/LiuShiYa-github/PythonSpider/blob/master/02%E7%AC%AC%E4%BA%8C%E7%AB%A0%EF%BC%9A%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%2Brequests/CarHomeSpiderMysqlIncre.py)
 
