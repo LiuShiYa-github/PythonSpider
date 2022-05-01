@@ -26,16 +26,16 @@ QueryStingParameter(查询参数) - 观察规律
 ```
 
 
-![img_44.png](img_44.png)
+![img_44.png](../Image/img_44.png)
 
-![img_45.png](img_45.png)
+![img_45.png](../Image/img_45.png)
 
-![img_46.png](img_46.png)
+![img_46.png](../Image/img_46.png)
 
 
 [代码](https://github.com/LiuShiYa-github/PythonSpider/blob/master/05%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E5%A4%9A%E7%BA%A7%E9%A1%B5%E9%9D%A2%2B%E5%A4%9A%E7%BA%BF%E7%A8%8B%2BCookie%E7%99%BB%E5%BD%95/HuaweiApp.py)
 
-![img_43.png](img_43.png)
+![img_43.png](../Image/img_43.png)
 
 # JSON解析模块及全站抓取
 
@@ -86,15 +86,15 @@ with open('app_list.json', 'w', encoding='utf-8') as f:
 
 **JSON全站抓取**
 
-![img_49.png](img_49.png)
+![img_49.png](../Image/img_49.png)
 
-![img_50.png](img_50.png)
+![img_50.png](../Image/img_50.png)
 
-![img_51.png](img_51.png)
+![img_51.png](../Image/img_51.png)
 
 [豆瓣剧情电影排行榜](https://github.com/LiuShiYa-github/PythonSpider/blob/master/05%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E5%A4%9A%E7%BA%A7%E9%A1%B5%E9%9D%A2%2B%E5%A4%9A%E7%BA%BF%E7%A8%8B%2BCookie%E7%99%BB%E5%BD%95/DoubanPlotSpider.py)
 
-![img_47.png](img_47.png)
+![img_47.png](../Image/img_47.png)
 
 # 多线程爬虫
 
@@ -232,16 +232,16 @@ for i in t_list:
 [线程抓取华为应用市场社交类app](https://github.com/LiuShiYa-github/PythonSpider/blob/master/05%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E5%A4%9A%E7%BA%A7%E9%A1%B5%E9%9D%A2%2B%E5%A4%9A%E7%BA%BF%E7%A8%8B%2BCookie%E7%99%BB%E5%BD%95/HuaweiAppMultithreading.py)
 
 **多线程抓取华为应用商店对比**
-![img_15.png](img_15.png)
+![img_15.png](../Image/img_15.png)
 
-![img_16.png](img_16.png)
+![img_16.png](../Image/img_16.png)
 
 
 **多线程抓取腾讯招聘职位信息的对比**
 
-![img_17.png](img_17.png)
+![img_17.png](../Image/img_17.png)
 
-![img_18.png](img_18.png)
+![img_18.png](../Image/img_18.png)
 
 # 多级页面多线程爬取
 
@@ -256,7 +256,7 @@ for i in t_list:
 
 [多线程抓取多级页面 --- 腾讯招聘](https://github.com/LiuShiYa-github/PythonSpider/blob/master/05%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E5%A4%9A%E7%BA%A7%E9%A1%B5%E9%9D%A2%2B%E5%A4%9A%E7%BA%BF%E7%A8%8B%2BCookie%E7%99%BB%E5%BD%95/MultilevelPageMultithreading.py)
 
-![img_48.png](img_48.png)
+![img_48.png](../Image/img_48.png)
 
 # Cookie模拟登录
 
@@ -282,9 +282,9 @@ for i in t_list:
     定义headers参数,将抓取到的Cookie放入
 ```
 
-![img_53.png](img_53.png)
+![img_53.png](../Image/img_53.png)
 
-![img_52.png](img_52.png)
+![img_52.png](../Image/img_52.png)
 
 
 
