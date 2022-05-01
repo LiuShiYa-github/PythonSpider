@@ -212,8 +212,15 @@ myset.insert_many({'name': '泰坦尼克号', 'star': 'T', 'time': '1990-01-01'}
 
 # requets模块
 
+**requests请求模块**
 ```text
-
+功能:
+    类似于urllib库,向网站发送请求获取响应,为第三方模块
+安装:
+    Linux: sudo pip3 install requests
+    windows: python -m pip install requests
+常用方法:
+    res = requests.get(url=url, headers=headers)
 ```
 
 # 增量爬虫-MySQL以及Redis实现
