@@ -223,6 +223,9 @@ myset.insert_many({'name': '泰坦尼克号', 'star': 'T', 'time': '1990-01-01'}
     res = requests.get(url=url, headers=headers)
 ```
 
+[requests官网](https://pypi.org/project/requests/)
+
+
 # 增量爬虫-MySQL以及Redis实现
 
 **增量爬虫-MySQL**
