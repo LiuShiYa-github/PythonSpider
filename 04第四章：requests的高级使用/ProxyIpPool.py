@@ -6,7 +6,7 @@
 @Author  : 热气球
 @Software: PyCharm
 @Version : 1.0
-@Contact : 17695691664@163.com
+@Contact : 2573514647@qq.com
 @Des     : 抓取飞度代理的免费高匿代理并测试可用性
 """
 
