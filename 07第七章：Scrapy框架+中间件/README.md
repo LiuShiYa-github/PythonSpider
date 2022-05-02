@@ -26,7 +26,7 @@ from scrapy import cmdline
 
 cmdline.execute('scrapy crawl che168'.split())
 ```
-![img_57.png](img_57.png)
+![img_57.png](../Image/img_57.png)
 
 **Scrapy五大组件及其作用**
 
@@ -56,9 +56,9 @@ cmdline.execute('scrapy crawl che168'.split())
     对于需要继续跟进的URL再次交给调度器入队列,如此循环
 ```
 
-![img.png](img_19.png)
+![img.png](../Image/img_19.png)
 
-![img_1.png](img_20.png)
+![img_1.png](../Image/img_20.png)
 
 # Scrapy配置文件解析
 
@@ -71,13 +71,13 @@ cmdline.execute('scrapy crawl che168'.split())
 
 [scrapy抓取che168二收车信息](https://github.com/LiuShiYa-github/PythonSpider/tree/master/07%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9AScrapy%E6%A1%86%E6%9E%B6%2B%E4%B8%AD%E9%97%B4%E4%BB%B6/Che168)
 
-![img_58.png](img_58.png)
+![img_58.png](../Image/img_58.png)
 
 **Scrapy数据持久化**
 
-![img_60.png](img_60.png)
+![img_60.png](../Image/img_60.png)
 
-![img_59.png](img_59.png)
+![img_59.png](../Image/img_59.png)
 
 
 # 中间件
