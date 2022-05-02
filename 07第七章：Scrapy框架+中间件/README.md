@@ -82,11 +82,43 @@ cmdline.execute('scrapy crawl che168'.split())
 
 # 中间件
 
+[Scrapy中间件-随机User-Agent-代理IP地址-抓取二手车之家](https://github.com/LiuShiYa-github/PythonSpider/tree/master/07%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9AScrapy%E6%A1%86%E6%9E%B6%2B%E4%B8%AD%E9%97%B4%E4%BB%B6/Che168-middlewares "悬停显示")
+
+![img_61.png](../Image/img_61.png)
+
+![img_62.png](../Image/img_62.png)
+
 # Scrapy处理POST请求
+
+[ScrapyPOST抓取-肯德基门店](https://github.com/LiuShiYa-github/PythonSpider/tree/master/07%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9AScrapy%E6%A1%86%E6%9E%B6%2B%E4%B8%AD%E9%97%B4%E4%BB%B6/KFC "悬停显示")
+
+![img_63.png](../Image/img_63.png)
+
+![img_64.png](../Image/img_64.png)
 
 # Scrapy之图片管道
 
+[Scrapy抓取图片-360浏览器美眉图片抓取](https://github.com/LiuShiYa-github/PythonSpider/tree/master/07%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9AScrapy%E6%A1%86%E6%9E%B6%2B%E4%B8%AD%E9%97%B4%E4%BB%B6/SO "悬停显示")
+
+![img_65.png](../Image/img_65.png)
+
+![img_66.png](../Image/img_66.png)
+
 # Scrapy之文件管道
 
+[Scrapy三级以上页面抓取-PPT模板](https://github.com/LiuShiYa-github/PythonSpider/tree/master/07%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9AScrapy%E6%A1%86%E6%9E%B6%2B%E4%B8%AD%E9%97%B4%E4%BB%B6/PPT "悬停显示")
+
+![img_67.png](../Image/img_67.png)
+
+![img_68.png](../Image/img_68.png)
 
 
+[Scrapy抓取文件处理-盗墓笔记全系列](https://github.com/LiuShiYa-github/PythonSpider/tree/master/07%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9AScrapy%E6%A1%86%E6%9E%B6%2B%E4%B8%AD%E9%97%B4%E4%BB%B6/Daomu "悬停显示")
+
+![img_69.png](../Image/img_69.png)
+
+![img_70.png](../Image/img_70.png)
+
+![img_71.png](../Image/img_71.png)
+
+![img_72.png](../Image/img_72.png)
