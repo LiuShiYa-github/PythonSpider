@@ -6,7 +6,7 @@
 @Author  : 热气球
 @Software: PyCharm
 @Version : 1.0
-@Contact : 17695691664@163.com
+@Contact : 2573514647@qq.com
 @Des     : 使用selenium抓取京东商城爬虫类的图书
 """
 from selenium import webdriver

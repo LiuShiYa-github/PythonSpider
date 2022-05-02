@@ -12,6 +12,7 @@
 from selenium import webdriver
 import time
 import pymongo
+from selenium.webdriver.common.by import By
 
 
 class JdSpider:
@@ -22,8 +23,8 @@ class JdSpider:
 		self.driver = webdriver.Chrome(options=self.options)
 		self.driver.get(url='https://www.jd.com')
 		# 搜索框发送:爬虫书 点击搜索按钮
-		self.driver.find_element_by_xpath('//*[@id="key"]').send_keys('爬虫书')
-		self.driver.find_element_by_xpath('//*[@id="search"]/div/div[2]/button').click()
+		self.driver.find_element(By.XPATH, '//*[@id="key"]').send_keys('爬虫书')
+		self.driver.find_element(By.XPATH, '//*[@id="search"]/div/div[2]/button').click()
 		# 应该要给页面加载元素预留时间
 		time.sleep(1)
 		# 创建mongo地址数据库
@@ -39,7 +40,7 @@ class JdSpider:
 		)
 		time.sleep(3)
 		# 2 提取具体的数据
-		li_list = self.driver.find_elements_by_xpath('//*[@id="J_goodsList"]/ul/li')
+		li_list = self.driver.find_elements(By.XPATH, '//*[@id="J_goodsList"]/ul/li')
 		for li in li_list:
 			try:
 				item = {}
@@ -57,7 +58,7 @@ class JdSpider:
 			self.parse_html()
 			# 判断是否到最后一页
 			if self.driver.page_source.find('pn-next disabled') == -1:
-				self.driver.find_element_by_xpath('//*[@id="J_bottomPage"]/span[1]/a[9]').click()
+				self.driver.find_element(By.XPATH, '//*[@id="J_bottomPage"]/span[1]/a[9]').click()
 				time.sleep(1)
 			else:
 				self.driver.quit()
