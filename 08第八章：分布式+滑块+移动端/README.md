@@ -72,7 +72,6 @@ pytesseract：
 ![img_75.png](../Image/img_75.png)
 
 
-
 # 移动端数据抓取
 
 [移动端数据抓取-有道翻译](https://github.com/LiuShiYa-github/PythonSpider/blob/master/08%E7%AC%AC%E5%85%AB%E7%AB%A0%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%2B%E6%BB%91%E5%9D%97%2B%E7%A7%BB%E5%8A%A8%E7%AB%AF/Mobilephone_youdao.py "悬停显示")
