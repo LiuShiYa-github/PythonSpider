@@ -1,12 +1,12 @@
 #!/usr/bin/env python3.8.8
 # -*- encoding: utf-8 -*-
-'''
+"""
 @File    :   BaiduTiebaSpider.py
 @Time    :   2022/02/07 16:49:51
 @Author  :   热气球
 @Version :   1.0
-@Contact :   17695691664@163.com
-'''
+@Contact :   2573514647@qq.com
+"""
 
 """
 抓取指定贴吧的指定页的数据，保存到本地

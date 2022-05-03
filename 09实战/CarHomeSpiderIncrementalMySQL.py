@@ -1,12 +1,12 @@
 #!/usr/bin/env python3.8.8
 # -*- encoding: utf-8 -*-
-'''
+"""
 @File    :   test.py
 @Time    :   2022/02/15 08:19:32
 @Author  :   热气球
 @Version :   1.0
-@Contact :   17695691664@163.com
-'''
+@Contact :   2573514647@qq.com
+"""
 
 # C:/Users/shiya.liu/AppData/Local/Programs/Python/Python38/python.exe -m pip install
 # here put the import lib
