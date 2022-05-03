@@ -113,6 +113,8 @@
 * [ScrapyPOST抓取-肯德基门店](https://github.com/LiuShiYa-github/PythonSpider/tree/master/07%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9AScrapy%E6%A1%86%E6%9E%B6%2B%E4%B8%AD%E9%97%B4%E4%BB%B6/KFC "悬停显示")
 * [Scrapy三级以上页面抓取-PPT模板](https://github.com/LiuShiYa-github/PythonSpider/tree/master/07%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9AScrapy%E6%A1%86%E6%9E%B6%2B%E4%B8%AD%E9%97%B4%E4%BB%B6/PPT "悬停显示")
 * [Scrapy抓取图片-360浏览器美眉图片抓取](https://github.com/LiuShiYa-github/PythonSpider/tree/master/07%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9AScrapy%E6%A1%86%E6%9E%B6%2B%E4%B8%AD%E9%97%B4%E4%BB%B6/SO "悬停显示")
+* [Scrapy分布式爬虫-腾讯招聘](https://github.com/LiuShiYa-github/PythonSpider/tree/master/08%E7%AC%AC%E5%85%AB%E7%AB%A0%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%2B%E6%BB%91%E5%9D%97%2B%E7%A7%BB%E5%8A%A8%E7%AB%AF/Tencent "悬停显示")
+* [移动端数据抓取-有道翻译](https://github.com/LiuShiYa-github/PythonSpider/blob/master/08%E7%AC%AC%E5%85%AB%E7%AB%A0%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%2B%E6%BB%91%E5%9D%97%2B%E7%A7%BB%E5%8A%A8%E7%AB%AF/Mobilephone_youdao.py "悬停显示")
 * [豆瓣滑块验证码](https://github.com/LiuShiYa-github/PythonSpider/blob/master/08%E7%AC%AC%E5%85%AB%E7%AB%A0%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%2B%E6%BB%91%E5%9D%97%2B%E7%A7%BB%E5%8A%A8%E7%AB%AF/DoubanLimitSlider.py "悬停显示")
 * [pytesseract识别图片](https://github.com/LiuShiYa-github/PythonSpider/blob/master/08%E7%AC%AC%E5%85%AB%E7%AB%A0%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%2B%E6%BB%91%E5%9D%97%2B%E7%A7%BB%E5%8A%A8%E7%AB%AF/Pytesseract.py "悬停显示")
 * [抓取bilibili舞蹈区top100](https://github.com/LiuShiYa-github/PythonSpider/blob/master/09%E5%AE%9E%E6%88%98/BilibiliDanceTop100.py)
