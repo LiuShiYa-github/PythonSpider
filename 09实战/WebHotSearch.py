@@ -38,7 +38,7 @@ class WebHotSearch:
 
     def run(self):
         html = self.get_html()
-        for rank in range(60):
+        for rank in range(51):
             self.parse_html(html=html, i=rank)
             time.sleep(random.uniform(0, 3))
 
