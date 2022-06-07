@@ -34,7 +34,7 @@ class WebHotSearch:
                 urllib.parse.quote(html['data']['band_list'][i]['note']))
             print(list)
         except Exception as e:
-            print(e)
+            pass
 
     def run(self):
         html = self.get_html()
