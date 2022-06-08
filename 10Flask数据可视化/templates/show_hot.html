@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微博热搜top20</title>
+    <!-- 引入echarts -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.3.2/echarts.min.js"></script>
+</head>
+<body>
+  <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+  <div id="main" style="width: 1200px;height:600px;"></div>
+    <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main'));
+
+      // 指定图表的配置项和数据
+      var option = {
+  dataset: {
+    source: {{data|tojson}}
+  },
+  grid: { containLabel: true },
+  xAxis: { name: '热度' },
+  yAxis: { type: 'category' },
+  visualMap: {
+    orient: 'horizontal',
+    left: 'center',
+    min: 190636,
+    max: 11690769,
+    text: ['高热度', '低热度'],
+    // Map the score column to color
+    dimension: 0,
+    inRange: {
+      color: ['#65B581', '#FFCE34', '#FD665F']
+    }
+  },
+  series: [
+    {
+      type: 'bar',
+      encode: {
+        // Map the "amount" column to X axis.
+        x: 'amount',
+        // Map the "product" column to Y axis
+        y: 'product'
+      }
+    }
+  ]
+};
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+</body>
+</html>

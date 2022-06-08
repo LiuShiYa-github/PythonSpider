@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微博热搜分类</title>
+    <!-- 引入echarts -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.3.2/echarts.min.js"></script>
+</head>
+<body>
+  <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+  <div id="main" style="width: 1000px;height:600px;"></div>
+    <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main'));
+
+      // 指定图表的配置项和数据
+      var option = {
+  backgroundColor: '#2c343c',
+  title: {
+    text: '热搜分类',
+    left: 'center',
+    top: 20,
+    textStyle: {
+      color: '#ccc'
+    }
+  },
+  tooltip: {
+    trigger: 'item'
+  },
+  visualMap: {
+    show: false,
+    min: 1,
+    max: 50,
+    inRange: {
+      colorLightness: [0, 1]
+    }
+  },
+  series: [
+    {
+      name: 'Access From',
+      type: 'pie',
+      radius: '55%',
+      center: ['50%', '50%'],
+      data: {{data|tojson}}
+      .sort(function (a, b) {
+        return a.value - b.value;
+      }),
+      roseType: 'radius',
+      label: {
+        color: 'rgba(255, 255, 255, 0.3)'
+      },
+      labelLine: {
+        lineStyle: {
+          color: 'rgba(255, 255, 255, 0.3)'
+        },
+        smooth: 0.2,
+        length: 10,
+        length2: 20
+      },
+      itemStyle: {
+        color: '#c23531',
+        shadowBlur: 200,
+        shadowColor: 'rgba(0, 0, 0, 0.5)'
+      },
+      animationType: 'scale',
+      animationEasing: 'elasticOut',
+      animationDelay: function (idx) {
+        return Math.random() * 200;
+      }
+    }
+  ]
+};
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+</body>
+</html>
