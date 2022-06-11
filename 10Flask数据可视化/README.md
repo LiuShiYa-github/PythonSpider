@@ -16,7 +16,7 @@
 
 **互联网岗位薪资分析**
 
-[拉勾网互联网岗位信息分析](https://github.com/LiuShiYa-github/PythonSpider/blob/master/10Flask%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/LagouFlask.py)
+[联网岗位信息分析](https://github.com/LiuShiYa-github/PythonSpider/blob/master/10Flask%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/LagouFlask.py)
 
 ![img_74.png](../Image/lagou.png)
 
