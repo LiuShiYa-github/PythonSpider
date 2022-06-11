@@ -122,5 +122,6 @@
 * [拉勾网互联网岗位信息分析](https://github.com/LiuShiYa-github/PythonSpider/blob/master/10Flask%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/LagouFlask.py)
 * [微博热搜top20展示](https://github.com/LiuShiYa-github/PythonSpider/blob/master/10Flask%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/WeiboFlask.py)
 * [微博热搜](https://github.com/LiuShiYa-github/PythonSpider/blob/master/09%E5%AE%9E%E6%88%98/WebHotSearch.py)
+* [猫眼电影类型展示](https://github.com/LiuShiYa-github/PythonSpider/blob/master/10Flask%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/MaoyanFilmFlask.py)
 
 </details>
