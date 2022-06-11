@@ -118,5 +118,9 @@
 * [豆瓣滑块验证码](https://github.com/LiuShiYa-github/PythonSpider/blob/master/08%E7%AC%AC%E5%85%AB%E7%AB%A0%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%2B%E6%BB%91%E5%9D%97%2B%E7%A7%BB%E5%8A%A8%E7%AB%AF/DoubanLimitSlider.py "悬停显示")
 * [pytesseract识别图片](https://github.com/LiuShiYa-github/PythonSpider/blob/master/08%E7%AC%AC%E5%85%AB%E7%AB%A0%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%2B%E6%BB%91%E5%9D%97%2B%E7%A7%BB%E5%8A%A8%E7%AB%AF/Pytesseract.py "悬停显示")
 * [抓取bilibili舞蹈区top100](https://github.com/LiuShiYa-github/PythonSpider/blob/master/09%E5%AE%9E%E6%88%98/BilibiliDanceTop100.py)
+* [拉勾网职位信息](https://github.com/LiuShiYa-github/PythonSpider/blob/master/09%E5%AE%9E%E6%88%98/lagou.py)
+* [拉勾网互联网岗位信息分析](https://github.com/LiuShiYa-github/PythonSpider/blob/master/10Flask%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/LagouFlask.py)
+* [微博热搜top20展示](https://github.com/LiuShiYa-github/PythonSpider/blob/master/10Flask%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/WeiboFlask.py)
+* [微博热搜](https://github.com/LiuShiYa-github/PythonSpider/blob/master/09%E5%AE%9E%E6%88%98/WebHotSearch.py)
 
 </details>
